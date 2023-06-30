@@ -1,0 +1,8 @@
+$color-green: #00634B;
+
+@mixin pseudo{
+ display: block;
+ content: '';
+ position: absolute;
+ object-fit: cover;
+}

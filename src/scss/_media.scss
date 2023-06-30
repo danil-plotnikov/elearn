@@ -1,0 +1,244 @@
+@media screen and ( max-width: 600px ){
+ html {
+  font-size: 0.23529411764vw;
+ }
+
+ .container{
+  padding: 0 20rem;
+ }
+
+ .header{
+  padding: 20rem 0;
+  background: #fff;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  &-nav{
+   position: fixed;
+   top: 0;
+   right: -100%;
+   width: 90%;
+   height: 100%;
+   flex-direction: column;
+   gap: 20rem 0;
+   background: #fff;
+   justify-content: center;
+   align-items: flex-end;
+   padding-right: 80rem;
+   z-index: 10;
+   transition: 0.4s;
+
+   &__item{
+    font-size: 24rem;
+   }
+
+   &.active{
+    right: 0;
+   }
+  }
+
+  &-burger{
+   display: block;
+   transition: 0.4s;
+   position: relative;
+   z-index: 20;
+
+   span{
+    background: $color-green;
+    width: 32rem;
+    height: 4rem;
+    margin-bottom: 4rem;
+    border-radius: 4rem;
+    display: block;
+    transition: 0.4s;
+
+    &:last-child{
+     margin-bottom: 0;
+    }
+   }
+
+   &.active{
+    transform: translateX(5rem);
+    
+    span{
+
+     &:nth-child(1){
+      transform: rotate(45deg) translateY(11rem);
+     }
+     &:nth-child(2){
+      opacity: 0;
+     }
+     &:nth-child(3){
+      transform: rotate(-45deg) translateY(-11rem);
+     }
+    }
+   }
+  }
+ }
+
+ .main{
+  padding: 140rem 0 50rem;
+
+  &__circle{
+   width: 50rem;
+   top: 0;
+  }
+
+  &__line{
+   width: 120rem;
+   bottom: 450rem;
+  }
+
+  &__arrow{
+   width: 120px;
+   bottom: 420rem;
+   left: auto;
+   right: 20%;
+  }
+
+  &-header{
+   font-size: 48rem;
+   margin-bottom: 18rem;
+
+   &:after{
+    width: 100rem;
+    height: 59.5rem;
+    top: -25rem;
+    right: 0;
+   }
+  }
+
+  &-text{
+   font-size: 16rem;
+   line-height: 24rem;
+   margin-bottom: 18rem;
+  }
+
+  &-advantages{
+   gap: 10rem 20rem;
+   flex-wrap: wrap;
+   margin-bottom: 18rem;
+
+   &__item{
+    font-size: 16rem;
+   }
+  }
+
+  &__btn{
+   width: 100%;
+  }
+
+  &-infographic{
+   margin-top: 40rem;
+   position: relative;
+   top: 0;
+   left: 0;
+   transform: none;
+   width: 100%;
+
+   &__img{
+    width: 110%;
+    max-width: 110%;
+   }
+
+   &-students{
+    padding: 15rem;
+    bottom: 70rem;
+    left: 0;
+    width: 200rem;
+
+    &__number{
+     width: 100rem;
+    }
+
+    &__line{
+     height: 3rem;
+     width: 30rem;
+     margin: 0 auto 10rem
+    }
+
+    &__images{
+     width: 160rem;
+
+     img{
+      --size: 28rem;
+     }
+    }
+
+    &__more{
+     --size: 28rem;
+    }
+   }
+
+   &-courses{
+    --size: 100rem;
+    top: 60rem;
+    right: 20rem;
+
+    &__icon{
+     width: 20rem;
+    }
+
+    &__text{
+     width: 50rem;
+    }
+   }
+  }
+ }
+  
+
+ .popup{
+
+  &-main{
+   width: 95%;
+   padding: 20rem;
+   overflow-y: scroll;
+  }
+
+  &__header{
+   margin-bottom: 20rem;
+  }
+
+  &-input{
+   padding: 8rem 12rem;
+   margin-bottom: 15rem;
+
+   input{
+    font-size: 16rem;
+   }
+
+   p{
+    font-size: 16rem;
+   }
+  }
+
+  .custom-select{
+
+   &-container{
+    margin-bottom: 15rem;
+   }
+   
+   &-opener{
+    padding: 8rem 12rem;
+    font-size: 16rem;
+   }
+
+   &-option{
+    font-size: 16rem;
+    padding: 3rem 12rem;
+   }
+  }
+
+  &-terms{
+   margin-bottom: 20rem;
+  }
+
+  &__btn{
+   height: 50rem;
+   font-size: 16rem;
+  }
+ }
+}

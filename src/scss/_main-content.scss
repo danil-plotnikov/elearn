@@ -1,0 +1,214 @@
+.main{
+ padding-top: 276rem;
+ position: relative;
+ padding-bottom: 300rem;
+ &__circle{
+  position: absolute;
+  width: 139rem;
+  top: 39rem;
+  left: -8rem;
+  object-fit: cover;
+ }
+
+ &__line{
+  width: 359rem;
+  position: absolute;
+  left: -7rem;
+  bottom: 192rem; 
+ }
+
+ &__arrow{
+  width: 230rem;
+  position: absolute;
+  bottom: 216rem;
+  left: 813rem;
+ }
+
+ &-header{
+  font-size: 64rem;
+  letter-spacing: 0.64rem;
+  font-weight: 700;
+  margin-bottom: 24rem;
+  position: relative;
+
+  &::after{
+   @include pseudo;
+   background-image: url('../img/dest/main/header-decor.svg');
+   background-size: contain;
+   background-repeat: no-repeat;
+   width: 255.48rem;
+   height: 151.978rem;
+   top: -74rem;
+   right: -62rem;
+  }
+ }
+
+ &-text{
+  color: #4E4E4E;
+  line-height: 26rem;
+  font-size: 18rem;
+  letter-spacing: 0.18rem;
+  margin-bottom: 30rem;
+ } 
+
+ &-advantages{
+  display: flex;
+  align-items: center;
+  gap: 0 48rem;
+  margin-bottom: 55rem;
+
+  &__item{
+   display: flex;
+   align-items: center;
+   font-size: 18rem;
+   letter-spacing: 0.18rem;
+
+
+   img{
+    --size: 24rem;
+    width: var(--size);
+    height: var(--size);
+    margin-right: 12rem;
+   }
+  }
+ }
+
+ &__btn{
+  width: 220rem;
+  height: 55rem;
+  background: $color-green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12rem;
+  font-weight: 600;
+  color: #FFF;
+  font-size: 18rem;
+  letter-spacing: 0.18rem;
+
+  &:hover{
+   box-shadow: 0rem 4rem 30rem 0rem rgba(32, 32, 32, 0.25);
+  }
+ }
+
+ &-infographic{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-45%);
+  right: -9rem;
+  width: 794.22rem;
+  padding: 0;
+
+  &__img{
+   width: 100%;
+  }
+ 
+  &-students{
+   border-radius: 20rem;
+   background: #FFF;
+   box-shadow: 10rem 4rem 34rem 0rem rgba(76, 99, 119, 0.20);
+   padding: 39.48rem 34.96rem 40.48rem 25.18rem;
+   width: 275.051rem;
+   position: absolute;
+   bottom: 241rem;
+   left: -14rem;
+   
+   &__number{
+    display: block;
+    width: 123.983rem;
+    margin: 0 auto 7.33rem;
+   }
+
+   &__line{
+    width: 36.803rem;
+    height: 4.046rem;
+    border-radius: 20rem;
+    background: #0FFFF1;
+    margin: 0 auto 18.85rem;
+   }
+
+   &__images{
+    display: flex; 
+    width: 208.93rem;
+    position: relative;
+    margin-left: 7rem;
+
+    .online{
+     position: relative;
+
+     &::after{
+      @include pseudo;
+      border-radius: 50%;
+      border: 0.5rem solid #FFF;
+      background: #089887;
+      width: 7.635rem;
+      height: 7.635rem;
+      top: 0;
+      right: 5rem;
+      z-index: 5; 
+     }
+    }
+
+    img{
+     position: relative;
+     border-radius: 50%;
+     display: block;
+     --size: 34.655rem;
+     width: var(--size);
+     height: var(--size);
+     min-width: var(--size);
+
+
+     @for $i from 1 through 7{
+      &:nth-child(3n + #{$i}){
+       left: $i * -5rem;
+      }
+     }
+
+     &:first-child{
+      left: 0;
+     }
+    }
+   }
+
+   &__more{
+    --size: 34.655rem;
+    width: var(--size);
+    height: var(--size);
+    min-width: var(--size);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E9E9E9;
+    font-size: 23rem;
+    position: absolute;
+    right: -11rem;
+   }
+  }
+
+  &-courses{
+   position: absolute;
+   top: 181rem;
+   right: 84rem;
+   --size: 173.077rem;
+   width: var(--size);
+   height: var(--size);
+   border-radius: 50% ;
+   background: #0D3934;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+
+   &__icon{
+    width: 41.796rem;
+    margin-bottom: 12.07rem;
+   }
+
+   &__text{
+    width: 76.283rem;
+   }
+  }
+ }
+}

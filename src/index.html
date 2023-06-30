@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="css/custom-select.css">
+ <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+ <header class="header">
+  <div class="header-wrap container">
+   <img src="img/dest/header/logo.png" alt="" class="header__logo">
+   <nav class="header-nav">
+    <!-- <div class="header-burger">
+     <span></span><span></span><span></span>
+    </div> -->
+    <a href="#" class="header-nav__item">
+     <p>About</p>
+    </a>
+    <a href="#" class="header-nav__item">
+     <p>Courses</p>
+     <img src="img/dest/header/arrow.png" alt="">
+    </a>
+    <a href="#" class="header-nav__item">
+     <p>Universities</p>
+     <img src="img/dest/header/arrow.png" alt="">
+    </a>
+    <a href="#" class="header-nav__item">
+     <p>Online Degrees</p>
+    </a>
+    <a href="#" class="header-nav__item">
+     <p>Teachers</p>
+    </a>
+   </nav>
+   <div class="header-buttons">
+    <button class="header-buttons__login">Log in</button>
+    <button class="header-buttons__register popup-open">Register</button>
+   </div>
+
+   <div class="header-burger">
+    <span></span><span></span><span></span>
+   </div>
+  </div>
+ </header>
+
+ <main class="main">
+
+  <img src="img/dest/main/before-circle.svg" alt="" class="main__circle">
+  <img src="img/dest/main/main-line.svg" alt="" class="main__line">
+  <img src="img/dest/main/main-arrow.svg" alt="" class="main__arrow">
+
+  <div class="container">
+   <div class="row">
+    <div class="col-lg-6">
+     <h1 class="main-header">Learn without limits</h1>
+     <p class="main-text">
+      Start, switch, or advance your career with more than 5,800 courses, Professional Certificates, and degrees from world-class universities and companies. <br>   Learning with us is easy because we have
+     </p>
+     <div class="main-advantages">
+      <div class="main-advantages__item">
+       <img src="img/dest/main/book.svg" alt="">
+       <p>Big library </p>
+      </div>
+      <div class="main-advantages__item">
+       <img src="img/dest/main/dollar.svg" alt="">
+       <p>Low prices</p>
+      </div>
+      <div class="main-advantages__item">
+       <img src="img/dest/main/certificate.svg" alt="">
+       <p>Professional certificates</p>
+      </div>
+     </div>
+     <button class="main__btn popup-open">Start learning</button>
+    </div>
+
+    <div class="main-infographic">
+
+     <img src="img/dest/main/main-infographic.png" alt="" class="main-infographic__img">
+     
+     <div class="main-infographic-students">
+      <img src="img/dest/main/infographic/40k.svg" alt="" class="main-infographic-students__number">
+      <div class="main-infographic-students__line"></div>
+      <div class="main-infographic-students__images">
+       <div class="online">
+        <img src="img/dest/main/infographic/students-1.jpg" alt="" class="">
+       </div>
+       <img src="img/dest/main/infographic/students-2.jpg" alt="">
+       <img src="img/dest/main/infographic/students-3.jpg" alt="">
+       <img src="img/dest/main/infographic/students-4.jpg" alt="">
+       <img src="img/dest/main/infographic/students-5.jpg" alt="">
+       <img src="img/dest/main/infographic/students-6.jpg" alt="">
+       <img src="img/dest/main/infographic/students-7.jpg" alt="">
+       <div class="main-infographic-students__more">+</div>
+      </div>
+     </div>
+
+     <div class="main-infographic-courses">
+      <img src="img/dest/main/courses/icon.svg" alt="" class="main-infographic-courses__icon">
+      <img src="img/dest/main/courses/text.svg" alt="" class="main-infographic-courses__text">
+     </div>
+     
+    </div>
+
+   </div>
+  </div>
+ </main>
+
+ <div class="popup">
+  <div class="popup-bg popup-close"></div>
+  <div class="popup-main">
+   <img src="img/dest/popup/close.png" alt="" class="popup__cross popup-close">
+   <h2 class="popup__header">Registration</h2>
+   <form action="#">
+    <label class="popup-input">
+     <input type="text" class="popup-input1">
+     <p>Name Surname</p>
+    </label>
+    <label class="popup-input">
+     <input type="text">
+     <p>Email</p>
+    </label>
+    <label class="popup-input">
+     <input type="tel">
+     <p>Phone</p>
+    </label>
+    <select class="popup-select">
+     <option value="Google">Google</option>
+     <option value="Linkedin">Linkedin</option>
+     <option value="Facebook">Facebook</option>
+     <option value="Instagram">Instagram</option>
+     <option value="Other">Other</option>
+    </select>
+    <label class="popup-input">
+     <input type="password" class="input">
+     <p>Password</p>
+     <img src="img/dest/popup/showpass.svg" alt="" class="popup-password popup-password__show">
+     <img src="img/dest/popup/hidepass.svg" alt="" class="popup-password popup-password__hide">
+    </label>
+    <label class="popup-input">
+     <input type="password">
+     <p>Confirm password</p>
+     <img src="img/dest/popup/showpass.svg" alt="" class="popup-password popup-password__show">
+     <img src="img/dest/popup/hidepass.svg" alt="" class="popup-password popup-password__hide">
+    </label>
+    <label class="popup-terms">
+     <input type="checkbox" name="">
+     <div class="popup-terms__check">
+      <img src="img/dest/popup/check.png" alt="">
+     </div>
+     <p>I agree with <span>Terms and Conditions</span></p>
+    </label>
+    <button class="popup__btn">Register</button>
+   </form>
+  </div>
+ </div>
+
+ <script src="js/custom-select.min.js"></script> 
+ <script src="js/main.min.js"></script>
+  
+</body>
+</html>

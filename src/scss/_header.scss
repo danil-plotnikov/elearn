@@ -1,0 +1,73 @@
+.header{
+ background: #FFF;
+ box-shadow: 0rem 4rem 20rem 0rem rgba(217, 217, 217, 0.25);
+ 
+
+ &-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rem 0;
+  
+ }
+
+ &__logo{
+  width: 110rem;
+ }
+
+ &-nav{
+  display: flex;
+  align-items: center;
+  gap: 0 72rem;
+
+  &__item{
+   display: flex;
+   align-items: center;
+   font-size: 18rem;
+   letter-spacing: 0.18rem;
+   font-weight: 500;
+   gap: 0 8rem;
+   
+   &:hover{
+    color: $color-green;
+   }
+
+   img{
+    --size: 22rem;
+    width: var(--size);
+    height: var(--size);
+   }
+  }
+ }
+
+ &-buttons{
+  display: flex;
+  align-items: center;
+  gap: 0 24rem;
+
+  &__login{
+   font-weight: 600;
+   color: $color-green;
+  }
+
+  &__register{
+   width: 98rem;
+   height: 42rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: $color-green;
+   border-radius: 12rem;
+   font-weight: 600;
+   color: #fff;
+
+   &:hover{
+    box-shadow: 0rem 4rem 30rem 0rem rgba(32, 32, 32, 0.25);
+   }
+  }
+ }
+
+ &-burger{
+  display: none;
+ }
+}

@@ -1,0 +1,79 @@
+@import 'vars';
+
+@font-face {
+ font-family: Helvetica Neu;
+ src: url(../../fonts/Helvetica-Neu-Bold.ttf);
+ font-weight: 700;
+}
+
+* {
+ box-sizing: border-box;
+}
+
+html {
+ scroll-behavior: smooth;
+ font-size: 0.0521105vw;
+}
+
+body {
+ font-family: 'Inter', sans-serif;
+ color: #000000;
+ &.no-scroll {
+   max-height: 100vh;
+   overflow: hidden !important;
+ }
+}
+
+html,body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+ text-decoration: none;
+ color: #000000;
+ transition: 0.4s;
+}
+
+button {
+ font-family: 'Inter', sans-serif;
+ border: none;
+ cursor: pointer;
+ padding: 0;
+ background: transparent;
+ transition: 0.4s;
+ font-size: 16rem;
+}
+input {
+ font-family: 'Inter', sans-serif;
+ font-size: 16rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+ margin: 0;
+}
+
+img {
+ max-width: 100%;
+}
+
+ul {
+ padding: 0;
+ list-style: none;
+}
+
+.container {
+ max-width: 1440rem;
+ padding: 0;
+}
+
+@import 'header';
+@import 'main-content';
+@import 'popup';
+@import 'media';

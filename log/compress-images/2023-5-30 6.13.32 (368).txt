@@ -1,0 +1,7 @@
+File from: [src/img/src/main/Highlight_10.png]
+
+File to: [src/img/dest/main/Highlight_10.png]
+
+Compression algorithm: [-]
+
+Description: File does not exist!
